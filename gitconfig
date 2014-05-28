@@ -1,0 +1,19 @@
+[push]
+	default = simple
+[user]
+	name = jdelight
+	email = james@jdelight.co.uk
+[merge]
+	tool = bc3
+[mergetool]
+	bc3 = trustExitCode
+
+[alias]
+  o = checkout
+  i = commit
+  s = status
+  b = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+
