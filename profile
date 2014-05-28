@@ -1,5 +1,5 @@
 
-[ -s "~/.nvm/nvm.sh" ] && . "~/.nvm/nvm.sh" # This loads nvm
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh" # This loads nvm
 
 # Virtualenv Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
