@@ -24,7 +24,7 @@ fi
 
 # Aliases
 alias g='git'
-
+alias python='python3'
 alias dv='cd ~/dev/'
 
 ### Added by the Heroku Toolbelt
