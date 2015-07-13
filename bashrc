@@ -18,6 +18,13 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 # Fixes an issue with mavericks and clang http://stackoverflow.com/questions/22394575/xcode-llvm-5-1-clang-error
 export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 
+# add node_modules/.bin to path
+PATH=$(npm bin):$PATH
+
+# add maven (mvn) to path
+PATH=/usr/local/Cellar/maven/3.3.3/bin:$PATH
+
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
