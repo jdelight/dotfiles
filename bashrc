@@ -35,6 +35,11 @@ alias dv='cd ~/dev/'
 # go to project root
 alias gr='cd $(git rev-parse --show-toplevel)'
 
+# tree
+alias t2='tree -L 2'
+alias t3='tree -L 3'
+alias t4='tree -L 4'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
