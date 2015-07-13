@@ -24,7 +24,6 @@ PATH=$(npm bin):$PATH
 # add maven (mvn) to path
 PATH=/usr/local/Cellar/maven/3.3.3/bin:$PATH
 
-
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
@@ -33,6 +32,8 @@ fi
 alias g='git'
 alias python='python3'
 alias dv='cd ~/dev/'
+# go to project root
+alias gr='cd $(git rev-parse --show-toplevel)'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
