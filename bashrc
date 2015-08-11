@@ -24,6 +24,10 @@ PATH=$(npm bin):$PATH
 # add maven (mvn) to path
 PATH=/usr/local/Cellar/maven/3.3.3/bin:$PATH
 
+# FINDER
+# enable text selection in finder quicklook
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
