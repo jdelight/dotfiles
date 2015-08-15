@@ -44,6 +44,11 @@ alias t2='tree -L 2'
 alias t3='tree -L 3'
 alias t4='tree -L 4'
 
+function jcurl() {
+    curl "$@" | json | pygmentize -l json
+}
+export -f jcurl
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
