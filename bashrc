@@ -24,6 +24,10 @@ PATH=$(npm bin):$PATH
 # add maven (mvn) to path
 PATH=/usr/local/Cellar/maven/3.3.3/bin:$PATH
 
+# FINDER
+# enable text selection in finder quicklook
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
@@ -39,6 +43,11 @@ alias gr='cd $(git rev-parse --show-toplevel)'
 alias t2='tree -L 2'
 alias t3='tree -L 3'
 alias t4='tree -L 4'
+
+function jcurl() {
+    curl "$@" | json | pygmentize -l json
+}
+export -f jcurl
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
