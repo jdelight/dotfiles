@@ -3,10 +3,6 @@
 [user]
 	name = jdelight
 	email = james@jdelight.co.uk
-[merge]
-	tool = bc3
-[mergetool]
-	bc3 = trustExitCode
 
 [alias]
   o = checkout
@@ -17,6 +13,7 @@
   p = pull
   h = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   l = log --oneline
+  fa = fetch --all	
   type = cat-file -t
   dump = cat-file -p
 
