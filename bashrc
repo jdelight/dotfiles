@@ -39,6 +39,15 @@ alias dv='cd ~/dev/'
 # go to project root
 alias gr='cd $(git rev-parse --show-toplevel)'
 
+# docker 
+alias dmd='docker-machine env default && eval "$(docker-machine env default)"'
+alias d='docker'
+alias dm='docker-machine'
+alias dc='docker-compose'
+alias dcu='docker-compose up -d'
+
+dmd
+
 # tree
 alias t2='tree -L 2'
 alias t3='tree -L 3'
@@ -48,6 +57,8 @@ function jcurl() {
     curl "$@" | json | pygmentize -l json
 }
 export -f jcurl
+
+export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
