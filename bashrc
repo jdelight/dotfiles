@@ -48,6 +48,10 @@ alias dcu='docker-compose up -d'
 
 dmd
 
+function dss(){
+	docker exec -it "$1" bash
+}
+
 # tree
 alias t2='tree -L 2'
 alias t3='tree -L 3'
