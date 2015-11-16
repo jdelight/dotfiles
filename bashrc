@@ -44,6 +44,20 @@ alias t2='tree -L 2'
 alias t3='tree -L 3'
 alias t4='tree -L 4'
 
+# docker
+alias dmd='docker-machine env default && eval "$(docker-machine env default)"'
+alias d='docker'
+alias dm='docker-machine'
+alias dc='docker-compose' 
+alias dcu='docker-compose up -d'
+
+function dkb() {
+	docker build -t "$1" .;
+}
+
+# actually setup docker
+dmd
+
 function jcurl() {
     curl "$@" | json | pygmentize -l json
 }
