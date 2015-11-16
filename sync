@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+git add .
+git commit -m"sync"
+npm version patch 
+git push origin master --tags
