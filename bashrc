@@ -39,24 +39,29 @@ alias dv='cd ~/dev/'
 # go to project root
 alias gr='cd $(git rev-parse --show-toplevel)'
 
-# docker 
+# tree
+alias t2='tree -L 2'
+alias t3='tree -L 3'
+alias t4='tree -L 4'
+
+# docker
 alias dmd='docker-machine env default && eval "$(docker-machine env default)"'
 alias d='docker'
 alias dm='docker-machine'
-alias dc='docker-compose'
+alias dc='docker-compose' 
 alias dcu='docker-compose up -d'
 alias dkr-clean='docker ps -aq | xargs docker rm -f && docker images --filter="dangling=true" -q | xargs docker rmi'
 
-dmd
+function dkb() {
+	docker build -t "$1" .;
+}
 
 function dss(){
 	docker exec -it "$1" bash
 }
 
-# tree
-alias t2='tree -L 2'
-alias t3='tree -L 3'
-alias t4='tree -L 4'
+# actually setup docker
+dmd
 
 function jcurl() {
     curl "$@" | json | pygmentize -l json
