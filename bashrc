@@ -1,4 +1,3 @@
-
 # set vim key bindings for bash
 set -o vi
 
@@ -57,8 +56,9 @@ function dkb() {
 }
 
 function dss(){
-	docker exec -it "$1" bash
+	docker run -it $1 bash;
 }
+
 
 # actually setup docker
 dmd
