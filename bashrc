@@ -45,6 +45,7 @@ alias d='docker'
 alias dm='docker-machine'
 alias dc='docker-compose'
 alias dcu='docker-compose up -d'
+alias dkr-clean='docker ps -aq | xargs docker rm -f && docker images --filter="dangling=true" -q | xargs docker rmi'
 
 dmd
 
