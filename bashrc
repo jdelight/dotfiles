@@ -33,7 +33,7 @@ fi
 
 # Aliases
 alias g='git'
-alias python='python3'
+alias python='python2'
 alias dv='cd ~/dev/'
 # go to project root
 alias gr='cd $(git rev-parse --show-toplevel)'
@@ -61,7 +61,7 @@ function dss(){
 
 
 # actually setup docker
-dmd
+# dmd
 
 function jcurl() {
     curl "$@" | json | pygmentize -l json
