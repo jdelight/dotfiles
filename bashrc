@@ -73,3 +73,11 @@ export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+if [ -f ./localrc ] 
+	then
+		source ./localrc
+fi
+
+
+
