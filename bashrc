@@ -74,9 +74,9 @@ export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
-if [ -f ./localrc ] 
+if [ -f ~/dotfiles/localrc ] 
 	then
-		source ./localrc
+		source ~/dotfiles/localrc
 fi
 
 
