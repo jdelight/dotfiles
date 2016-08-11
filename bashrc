@@ -47,9 +47,11 @@ alias t4='tree -L 4'
 # docker
 alias dmd='docker-machine env default && eval "$(docker-machine env default)"'
 alias d='docker'
+alias dr='docker run -it'
 alias dm='docker-machine'
 alias dc='docker-compose' 
 alias dcu='docker-compose up -d'
+alias dcr='docker-compose run'
 alias dkr-clean='docker ps -aq | xargs docker rm -f && docker images --filter="dangling=true" -q | xargs docker rmi'
 alias dkr-blat='docker images -q | xargs -I {} docker rmi -f {}'
 
