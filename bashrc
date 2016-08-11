@@ -51,6 +51,7 @@ alias dm='docker-machine'
 alias dc='docker-compose' 
 alias dcu='docker-compose up -d'
 alias dkr-clean='docker ps -aq | xargs docker rm -f && docker images --filter="dangling=true" -q | xargs docker rmi'
+alias dkr-blat='docker images -q | xargs -I {} docker rmi -f {}'
 
 function dkb() {
 	docker build -t "$1" .;
