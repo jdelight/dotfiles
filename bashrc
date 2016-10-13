@@ -11,6 +11,7 @@ export CHROME_BIN=/opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrom
 export FIREFOX_BIN=/opt/homebrew-cask/Caskroom/firefox/latest/Firefox.app/Contents/MacOS/firefox-bin
 source /usr/local/bin/virtualenvwrapper.sh
 export COMPOSE_HTTP_TIMEOUT=10000
+export PATH="$HOME/.yarn/bin:$PATH"
 
 # add psql to path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
@@ -87,3 +88,5 @@ fi
 
 
 
+
+export PATH="$HOME/.yarn/bin:$PATH"
