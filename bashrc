@@ -55,7 +55,7 @@ alias dc='docker-compose'
 alias dcu='docker-compose up -d'
 alias dcr='docker-compose run'
 alias dkr-clean='docker ps -aq | xargs docker rm -f && docker images --filter="dangling=true" -q | xargs docker rmi'
-alias dkr-blat='docker images -q | xargs -I {} docker rmi -f {}'
+alias dkr-blat='docker images -q | xargs -I {} docker rmi -f {} && docker volume ls -q | xargs docker volume rm'
 alias dkr-free-space='rm ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2'
 
 function dkb() {
