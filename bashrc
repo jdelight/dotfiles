@@ -40,6 +40,7 @@ alias dv='cd ~/dev/'
 # go to project root
 alias gr='cd $(git rev-parse --show-toplevel)'
 alias gx='vim .git/info/exclude'
+alias ll='ls -la'
 
 # tree
 alias t2='tree -L 2'
