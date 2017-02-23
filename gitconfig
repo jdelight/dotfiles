@@ -22,3 +22,5 @@
 	insteadOf = git://
 [core]
 	autocrlf = input
+[rebase]
+	autosquash = true
