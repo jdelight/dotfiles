@@ -93,8 +93,6 @@ fi
 
 
 
-export PATH="$HOME/.yarn/bin:$PATH"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jamesdacosta/dev/google-cloud-sdk/path.bash.inc' ]; then source '/Users/jamesdacosta/dev/google-cloud-sdk/path.bash.inc'; fi
 
