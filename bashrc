@@ -13,6 +13,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 export COMPOSE_HTTP_TIMEOUT=10000
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# GPG
+export GPG=gpg2
+alias gpg="gpg2"
+
 # add psql to path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
