@@ -41,6 +41,7 @@ fi
 alias g='git'
 alias python='python2'
 alias dv='cd ~/dev/'
+alias v4='cd ~/dev/clubcore/v4'
 # go to project root
 alias gr='cd $(git rev-parse --show-toplevel)'
 alias gx='vim .git/info/exclude'
