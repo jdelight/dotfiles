@@ -3,13 +3,9 @@ set -o vi
 
 [ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh" # This loads nvm
 
-# Virtualenv Wrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/dev
 export REACT_EDITOR=wstorm
 export CHROME_BIN=/opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 export FIREFOX_BIN=/opt/homebrew-cask/Caskroom/firefox/latest/Firefox.app/Contents/MacOS/firefox-bin
-source /usr/local/bin/virtualenvwrapper.sh
 export COMPOSE_HTTP_TIMEOUT=10000
 export PATH="$HOME/.yarn/bin:$PATH"
 
@@ -17,17 +13,11 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export GPG=gpg2
 alias gpg="gpg2"
 
-# add psql to path
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
 # Fixes an issue with mavericks and clang http://stackoverflow.com/questions/22394575/xcode-llvm-5-1-clang-error
 export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 
 # add node_modules/.bin to path
 PATH=$(npm bin):$PATH
-
-# add maven (mvn) to path
-PATH=/usr/local/Cellar/maven/3.3.3/bin:$PATH
 
 # FINDER
 # enable text selection in finder quicklook
@@ -46,8 +36,6 @@ alias v4='cd ~/dev/clubcore/v4'
 alias gr='cd $(git rev-parse --show-toplevel)'
 alias gx='vim .git/info/exclude'
 alias ll='ls -la'
-
-alias composer='php -n /usr/local/bin/composer'
 
 # tree
 alias t2='tree -L 2'
@@ -84,19 +72,11 @@ function jcurl() {
 }
 export -f jcurl
 
-export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
 
 if [ -f ~/dotfiles/localrc ] 
 	then
 		source ~/dotfiles/localrc
 fi
-
-
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jamesd/dev/google-cloud-sdk/path.bash.inc' ]; then source '/Users/jamesd/dev/google-cloud-sdk/path.bash.inc'; fi
