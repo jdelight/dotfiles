@@ -2,12 +2,22 @@
 set -o vi
 
 [ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh" # This loads nvm
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+:
 export REACT_EDITOR=wstorm
 export CHROME_BIN=/opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 export FIREFOX_BIN=/opt/homebrew-cask/Caskroom/firefox/latest/Firefox.app/Contents/MacOS/firefox-bin
 export COMPOSE_HTTP_TIMEOUT=10000
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+export MINIKUBE_WANTUPDATENOTIFICATION=1
+export WORKON_HOME=~/envs
+
+# fasd
+eval "$(fasd --init auto)"
 
 # GPG
 export GPG=gpg2
@@ -29,7 +39,6 @@ fi
 
 # Aliases
 alias g='git'
-alias python='python2'
 alias dv='cd ~/dev/'
 alias v4='cd ~/dev/clubcore/v4'
 # go to project root
