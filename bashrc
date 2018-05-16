@@ -12,7 +12,6 @@ export FIREFOX_BIN=/opt/homebrew-cask/Caskroom/firefox/latest/Firefox.app/Conten
 export COMPOSE_HTTP_TIMEOUT=10000
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 export MINIKUBE_WANTUPDATENOTIFICATION=1
 export WORKON_HOME=~/envs
 
