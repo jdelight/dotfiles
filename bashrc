@@ -19,8 +19,8 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(fasd --init auto)"
 
 # GPG
-export GPG=gpg2
-alias gpg="gpg2"
+alias gpg="GPG"
+alias gpg2="GPG"
 
 # Fixes an issue with mavericks and clang http://stackoverflow.com/questions/22394575/xcode-llvm-5-1-clang-error
 export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
