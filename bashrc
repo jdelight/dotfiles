@@ -63,6 +63,8 @@ alias dkr-blat='docker images -q | xargs -I {} docker rmi -f {} && docker volume
 alias dkr-free-space='rm ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/Docker.qcow2'
 alias k='kubectl'
 
+alias des='desctl'
+
 function dkb() {
 	docker build -t "$1" .;
 }
@@ -84,6 +86,11 @@ export -f jcurl
 if [ -f ~/dotfiles/localrc ] 
 	then
 		source ~/dotfiles/localrc
+fi
+
+if [ -f ~/dotfiles/privaterc ] 
+	then
+		source ~/dotfiles/privaterc
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
