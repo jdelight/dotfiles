@@ -10,6 +10,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export MINIKUBE_WANTUPDATENOTIFICATION=1
 export WORKON_HOME=~/envs
+export PATH=$PATH:~/dev/flutter/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
