@@ -1,7 +1,7 @@
 [push]
 	default = simple
 [user]
-	name = jdelight
+	name = James Da Costa
 	email = jamesd@brandwatch.com
 
 [alias]
@@ -24,3 +24,8 @@
 	autocrlf = input
 [rebase]
 	autosquash = true
+[rerere]
+	enabled = true
+[init]
+	defaultBranch = main
+	templateDir = /Users/jamesd/git-templates
